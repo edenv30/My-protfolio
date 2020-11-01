@@ -1,0 +1,66 @@
+{
+    "backgroundType": "gradient",
+    "plainBackgroundMode": "daylight",
+    "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
+    "FirstName": "Eden",
+    "MiddleName": "",
+    "LastName": "Varsulker",
+    "devDesc": "| Engineer | Programmer | Web Developer | FrontEnd | BackEnd ",
+    "icons": [
+      {
+        "id": 0,
+        "image": "fa-github",
+        "url": "https://github.com/edenv30",
+        "style": "socialicons"
+      },
+      {
+        "id": 1,
+        "image": "fa-facebook",
+        "url": "https://www.facebook.com/eden.varsulker",
+        "style": "socialicons"
+      },
+      {
+        "id": 2,
+        "image": "fa-instagram",
+        "url": "https://www.instagram.com/edenv3/",
+        "style": "socialicons"
+      },
+      {
+        "id": 3,
+        "image": "fa-linkedin",
+        "url": "https://www.linkedin.com/in/eden-varsulker-88676411a/",
+        "style": "socialicons"
+      },
+      {
+        "id": 4,
+        "image": "fa-twitter",
+        "url": "https://www.twitter.com/hashirshoaeb/",
+        "style": "socialicons"
+      },
+      {
+        "id": 5,
+        "image": "fa-envelope",
+        "url": "mailto:edenv30@gmail.com?subject=subject&body=body",
+        "style": "socialicons"
+
+      }
+    ],
+    "aboutHeading": "About Me",
+    "showLinkedinProfilePic": true,
+    "linkedinLink": "https://www.linkedin.com/",
+    "linkedinUsername": "edenv30@gmail.com",
+    "linkedinQuery": "?_l=1",
+    "showInstaProfilePic": true,
+    "instaLink": "https://www.instagram.com/",
+    "instaUsername": "edenv3",
+    "instaQuerry": "/?__a=1",
+    "aboutDescription": "My name is Eden I grew up in a small and warm city in the south of Israel. I graduated with a bachelor's degree in software engineering. I am an enthusiast person who is always passionate to learn new things. It can be technology, sport, any kind of challenge. My interests subjects are code writing, reading books, everything related to sports and extremes. These days I am looking for my first job, I am looking for a job with good vibes where I can express my skills and grow in it. Feel free to look at the attached projects and resumes. If you think there may be a match between us, feel free to contact me on the contact page.",
+    "projectHeading": "Recent Projects",
+    "gitHubLink": "https://api.github.com/users/",
+    "gitHubUsername": "edenv30",
+    "gitHubQuerry": "/repos?sort=updated&direction=desc",
+    "projectsLength": 4,
+    "contactDescription": "I am available on almost every social media. You can message me, I will reply within 24 hours. ",
+    "showNavigationbar": true,
+    "showBlog": false
+  }

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import './App.css';
+import {
+  showNavigationbar,
+  showBlog,
+} from "./assests/configurations.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import Navbar from './components/Navbar';
+import Landingpage from './components/home/Landingpage';
+import AboutMe from './components/home/AboutMe';
+import Projects from './components/home/Projects';
+import Contact from './components/home/Contact';
+import Footer from './components/Footer';
+import { Blog } from "./components/blog/Blog";
+import BlogPost from "./components/blog/BlogPost";
+
+const Home = () => {
+  return(
+    <Fragment>
+      <Landingpage />
+      <AboutMe />
+      <Projects />
+      <Contact />
+    </Fragment>
   );
-}
+};
+
+const App = () => (
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+      {showNavigationbar && <Navbar />}
+      <Route path="/" exact component={Home} />
+      {showBlog && <Route path="/blog" exact component={Blog} />}
+      {showBlog && <Route path="/blog/:id" component={BlogPost} />}
+      <Footer />
+    </BrowserRouter>
+);
 
 export default App;
