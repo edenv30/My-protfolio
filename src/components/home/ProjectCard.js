@@ -44,7 +44,7 @@ const ProjectCard = ({ value }) => {
 
   const { name, description, svn_url, stargazers_count, languages_url } = value;
   return (
-    <div className="col-md-6">
+    <div className="col-md-4 d-flex align-items-stretch">
       <div className="card shadow-lg p-3 mb-5 bg-white rounded">
         {/* <img src="" className="card-img-top" alt="..." /> */}
         <div className="card-body">

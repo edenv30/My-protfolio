@@ -4,10 +4,19 @@ import {
   icons,
 } from '../../assests/configurations.json';
 import * as emailjs from 'emailjs-com';
+import { fadeInRight } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
 const serviceIDemailJS = 'service_x32xfgo';
 const templateIDemailJS = 'template_yv9mt2y';
 const userIDemailJS = 'user_BRhs6IHAGRGZDoLoKFVbZ'
+
+const styles = {
+  fadeInRight: {
+    animation: 'x 3s ease infinite',
+    animationName: Radium.keyframes(fadeInRight, 'fadeInRight')
+  },
+};
 
 const Contact = () => {
 
@@ -81,14 +90,11 @@ const Contact = () => {
       
     };
 
-    
-
     return (
         <div id="contactme" className="jumbotron jumbotron-fluid m-0">
         <div className="container container-fluid p-5">
           <div className="row">
               <div className="col-5 d-none d-lg-block align-self-center">
-                <h1 className="display-4 mb-5 text-center">Contact</h1>
                 {icons.map((icon) => (
                  <a
                   key={icon.id}
@@ -105,13 +111,15 @@ const Contact = () => {
                       onMouseOut={() => toggleHover({ icon, event: "leave" })}
                   />
                   </a>
-                ))}
+                ))}<br /><br />
                   <p className="lead text-center">{contactDescription}</p>
               </div>
-            <div className={`col-lg-7`}>
-              <h1 className="display-4 mb-5 text-center">Send a message</h1>
+            <div className={`col-lg-7`} style={{maxWidth: '100%', overflowX: 'hidden'}}>
+              <StyleRoot>
+                <h1 className="display-4 mb-5 text-center" style={styles.fadeInRight}>Send a message</h1>
+              </StyleRoot>
               <form id="contact-form">
-                <div className="form-group">
+                <div className="form-group hidden">
                     <div className="row">
                         <div className="col-12 col-sm-12 col-md-6 mx-auto">
                             <input
@@ -125,7 +133,7 @@ const Contact = () => {
                             />
                         </div>
                     </div>
-                </div>
+                  </div>
                 <div className="form-group hidden">
                   <div className="row">
                     <div className="col-12 col-sm-12 col-md-6 mx-auto">
@@ -171,12 +179,12 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="row text-md-right text-sm-center">
+                <div className="row text-md-center text-sm-center">
                   <div className="col-12 col-sm-12 col-md-6 mx-auto">
                     <button
                         type="submit"
                         value="Send"
-                        className="btn btn-outline-light btn-lg"
+                        className="btn btn-outline-dark"
                         onClick={ (event) => sendMessage(event)}>
                         Send
                     </button>

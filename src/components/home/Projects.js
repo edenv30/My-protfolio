@@ -8,8 +8,20 @@ import {
   gitHubQuerry,
   projectsLength,
 } from "../../assests/configurations.json";
+// import { bounce } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
-
+const bounceAnimation = Radium.keyframes({
+  '25%': { transform: 'rotate(3deg) translateY(-5px)' },
+  '50%': { transform: 'rotate(-2deg)' },
+  '75%': { transform: 'rotate(1deg)' },
+})
+const styles = { 
+  bounce: {
+    animation: 'x 0.8s ease infinite',
+    animationName: bounceAnimation
+  }
+}
 
 const Projects = () => {
 
@@ -41,7 +53,9 @@ const Projects = () => {
         <div id="projects" className="jumbotron jumbotron-fluid bg-transparent m-0">
             {projectsArray.length && (
                 <div className="container container-fluid p-5">
-                  <h1 className="display-4 pb-5">{projectHeading}</h1>
+                <StyleRoot>
+                  <h1 className="display-4 pb-5" style={styles.bounce}>{projectHeading}</h1>
+                </StyleRoot>
                   <div className="row">
                     {projectsArray.map((project) => (
                       <ProjectCard key={project.id} id={project.id} value={project} />
