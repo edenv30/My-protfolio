@@ -94,7 +94,7 @@ const Contact = () => {
         <div id="contactme" className="jumbotron jumbotron-fluid m-0">
         <div className="container container-fluid p-5">
           <div className="row">
-              <div className="col-5 d-none d-lg-block align-self-center">
+              <div className="col-4 d-none d-lg-block align-self-center">
                 {icons.map((icon) => (
                  <a
                   key={icon.id}
@@ -114,14 +114,14 @@ const Contact = () => {
                 ))}<br /><br />
                   <p className="lead text-center">{contactDescription}</p>
               </div>
-            <div className={`col-lg-7`} style={{maxWidth: '100%', overflowX: 'hidden'}}>
+            <div className={`col-lg-8`} style={{maxWidth: '100%', overflowX: 'hidden'}}>
               <StyleRoot>
                 <h1 className="display-4 mb-5 text-center" style={styles.fadeInRight}>Send a message</h1>
               </StyleRoot>
               <form id="contact-form">
                 <div className="form-group hidden">
                     <div className="row">
-                        <div className="col-12 col-sm-12 col-md-6 mx-auto">
+                        <div className="col-12 col-sm-12 col-md-7 mx-auto">
                             <input
                                 type="text"
                                 name="name"
@@ -136,7 +136,7 @@ const Contact = () => {
                   </div>
                 <div className="form-group hidden">
                   <div className="row">
-                    <div className="col-12 col-sm-12 col-md-6 mx-auto">
+                    <div className="col-12 col-sm-12 col-md-7 mx-auto">
                       <input
                         type="email"
                         name="_replyto"
@@ -151,7 +151,7 @@ const Contact = () => {
                 </div>
                 <div className="form-group hidden">
                   <div className="row">
-                    <div className="col-12 col-sm-12 col-md-6 mx-auto">
+                    <div className="col-12 col-sm-12 col-md-7 mx-auto">
                       <input
                         type="text"
                         name="subject"
@@ -166,7 +166,7 @@ const Contact = () => {
                 </div>
                 <div className="form-group hiddenRight">
                   <div className="row">
-                    <div className="col-12 col-sm-12 col-md-6 mx-auto">
+                    <div className="col-12 col-sm-12 col-md-7 mx-auto">
                       <textarea
                         name="message"
                         className="form-control form-control-lg"
@@ -180,7 +180,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="row text-md-center text-sm-center">
-                  <div className="col-12 col-sm-12 col-md-6 mx-auto">
+                  <div className="col-12 col-sm-12 col-md-7 mx-auto">
                     <button
                         type="submit"
                         value="Send"

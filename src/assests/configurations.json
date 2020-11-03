@@ -32,12 +32,6 @@
         "style": "socialicons"
       },
       {
-        "id": 4,
-        "image": "fa-twitter",
-        "url": "https://www.twitter.com/hashirshoaeb/",
-        "style": "socialicons"
-      },
-      {
         "id": 5,
         "image": "fa-envelope",
         "url": "mailto:edenv30@gmail.com?subject=subject&body=body",
