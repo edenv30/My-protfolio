@@ -91,7 +91,8 @@ const AboutMe = () => {
             </StyleRoot><br />
             <p className="lead text-center">
               {aboutDescription.split('\n').map((item, key) => {
-                return <span key={key}>{item.replace('contact page', {contactPage} )}<br/></span>
+                return <span key={key}>{item}<br/></span>
+                // item.replace('contact page', {contactPage} )
               })}
             </p>
             {resumeURL && (

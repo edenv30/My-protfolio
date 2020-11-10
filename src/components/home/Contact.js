@@ -94,7 +94,7 @@ const Contact = () => {
         <div id="contactme" className="jumbotron jumbotron-fluid m-0">
         <div className="container container-fluid p-5">
           <div className="row">
-              <div className="col-4 d-none d-lg-block align-self-center">
+              <div className="col-5 d-none d-lg-block align-self-center">
                 {icons.map((icon) => (
                  <a
                   key={icon.id}
@@ -105,7 +105,7 @@ const Contact = () => {
                   >
                   <i
                       className={
-                          `${(icon.id === 5)? `fas` : `fab`} ${icon.image}  fa-3x ${hoverstatus[icon.id]}`
+                          `${(icon.id === 4)? `fas` : `fab`} ${icon.image}  fa-3x ${hoverstatus[icon.id]}`
                         }
                       onMouseOver={() => toggleHover({ icon, event: "enter" })}
                       onMouseOut={() => toggleHover({ icon, event: "leave" })}
@@ -114,7 +114,7 @@ const Contact = () => {
                 ))}<br /><br />
                   <p className="lead text-center">{contactDescription}</p>
               </div>
-            <div className={`col-lg-8`} style={{maxWidth: '100%', overflowX: 'hidden'}}>
+            <div className={`col-lg-7`} style={{maxWidth: '100%', overflowX: 'hidden'}}>
               <StyleRoot>
                 <h1 className="display-4 mb-5 text-center" style={styles.fadeInRight}>Send a message</h1>
               </StyleRoot>
