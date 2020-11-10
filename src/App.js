@@ -4,8 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import './App.css';
 import {
-  showNavigationbar,
-  showBlog,
+  showNavigationbar
 } from "./assests/configurations.json";
 
 import Navbar from './components/Navbar';

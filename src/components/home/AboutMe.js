@@ -66,9 +66,9 @@ const AboutMe = () => {
     const [showInsta, setShowInsta] = useState(showInstaProfilePic);
     const [resumeURL] = useState(Pdf);
 
-    const contactPage = <a className="nav-link lead" href={process.env.PUBLIC_URL + "/#contactme"} >
-                          <b>Contact</b>
-                        </a>;
+    // const contactPage = <a className="nav-link lead" href={process.env.PUBLIC_URL + "/#contactme"} >
+    //                       <b>Contact</b>
+    //                     </a>;
 
     return(
       <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
