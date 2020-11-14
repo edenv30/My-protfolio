@@ -49,7 +49,7 @@ const Landingpage = () => {
                             >
                             <i
                               className={
-                                  `${(icon.id === 4)? `fas` : `fab`} ${icon.image}  fa-3x ${hoverstatus[icon.id]}`
+                                  `${(icon.id === 2)? `fas` : `fab`} ${icon.image}  fa-3x ${hoverstatus[icon.id]}`
                                 }                            onMouseOver={() => toggleHover({ icon, event: "enter" })}
                               onMouseOut={() => toggleHover({ icon, event: "leave" })}
                             />

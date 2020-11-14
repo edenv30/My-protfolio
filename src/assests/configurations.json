@@ -15,31 +15,19 @@
       },
       {
         "id": 1,
-        "image": "fa-facebook",
-        "url": "https://www.facebook.com/eden.varsulker",
-        "style": "socialicons"
-      },
-      {
-        "id": 2,
-        "image": "fa-instagram",
-        "url": "https://www.instagram.com/edenv3/",
-        "style": "socialicons"
-      },
-      {
-        "id": 3,
         "image": "fa-linkedin",
         "url": "https://www.linkedin.com/in/eden-varsulker-88676411a/",
         "style": "socialicons"
       },
       {
-        "id": 4,
+        "id": 2,
         "image": "fa-envelope",
         "url": "mailto:edenv30@gmail.com?subject=subject&body=body",
         "style": "socialicons"
 
       },
       {
-        "id": 5,
+        "id": 3,
         "image": "fa-whatsapp",
         "url": "https://api.whatsapp.com/send?phone=972547878637",
         "style": "socialicons"
